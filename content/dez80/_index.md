@@ -1,6 +1,6 @@
 +++
 title = "Dominando Ensamblador del Z80"
-date = 2024-12-08
+draft = false
 +++
 
 *videos*
