@@ -3,23 +3,36 @@ title = "Dominando Ensamblador del Z80"
 draft = false
 +++
 
-*videos*
+Apuntes del curso.
 
-Nivel 1: [Teoría](https://youtube.com/playlist?list=PLmxqg54iaXrhybiaiiRlh2s6IqFp6s3vY&si=Vc9dtTTI3Qder67N), [Práctica](https://youtube.com/playlist?list=PLmxqg54iaXricAK8YNxIbAAErhUaq5m7m&si=-jpwFapOx_3Fewr1);
+## Material del curso
 
-Nivel 2: [Teoría](), [Práctica]();
+### Listas de reproducción
 
-Nivel 3: [Teoría](), [Práctica]();
+- Nivel 1: [Teoría](https://youtube.com/playlist?list=PLmxqg54iaXrhybiaiiRlh2s6IqFp6s3vY&si=Vc9dtTTI3Qder67N), [Práctica](https://youtube.com/playlist?list=PLmxqg54iaXricAK8YNxIbAAErhUaq5m7m&si=-jpwFapOx_3Fewr1);
+- Nivel 2: [Teoría](), [Práctica]();
+- Nivel 3: [Teoría](), [Práctica]();
+
+### Herramientas
+
+- [cpctelera](https://github.com/lronaldo/cpctelera)
+- [winape](http://www.winape.net/)
+
+## Apuntes
+
+### Nivel 1
+
+#### Teoría
 
 ---
 
 *1t001, 1t007*
 
-## Ciclo de ejecución de la CPU
+##### Ciclo de ejecución de la CPU
 
 El ciclo Fetch-Decode-Execute (Obtener-Decodificar-Ejecutar) es el ciclo fundamental de tres pasos que realiza un procesador para ejecutar instrucciones.
 
-![hola](ciclo_ejecucion.png)
+[Diagrama Ciclo de Ejecución](ciclo_ejecucion.png)
 
 1. El procesador obtiene la siguiente instrucción a ejecutar desde la memoria. La dirección de esta instrucción se almacena en un registro especial llamado contador de programa (PC). La instrucción se copia desde la memoria al registro de instrucción (IR). El PC se incrementa para apuntar a la siguiente instrucción en la memoria.
 
@@ -27,57 +40,110 @@ El ciclo Fetch-Decode-Execute (Obtener-Decodificar-Ejecutar) es el ciclo fundame
 
 3. El procesador ejecuta la instrucción decodificada. Esto puede implicar una variedad de acciones, como realizar una operación aritmética o lógica, mover datos entre registros, saltar a una dirección diferente en la memoria o leer/escribir datos desde/hacia un dispositivo de E/S.
 
-{{< rawhtml >}}<br>{{< /rawhtml >}}
-
-## Instrucciones del z80
+##### Instrucciones del z80
 
 Son los comandos secuenciales de bajo nivel que le dicen al procesador qué hacer (manipular datos en registros y memoria).
 
+[clrhome.org table](https://clrhome.org/table/)
+
+###### Instrucciones Comunes
+
 {{< rawhtml >}}
-
-<div class="card my-3 w-50">
-    <img src="clrhome.jpg" class="card-img-top" alt="...">
-    <div class="card-body">
-        <h5 class="card-title">clrhome.org table</h5>
-        <p class="card-text">This is a set of seven dynamic opcode tables that provides information about every single instruction supported by the processors in TI's Z80 line of calculators in a clean, simple, and searchable interface.</p>
-        <a href="https://clrhome.org/table/" class="btn btn-outline-secondary btn-sm">Ir al sitio</a>
-    </div>
-</div>
-
-
+<table class="table table-borderless w-auto">
+  <tbody>
+    <tr>
+      <td>3E</td>
+      <td>32</td>
+    </tr>
+    <tr>
+      <td>21</td>
+      <td>22</td>
+    </tr>
+    <tr>
+      <td>18</td>
+    </tr>
+  </tbody>
+</table>
 {{< /rawhtml >}}
 
-### Instrucciones Comunes
+[Tabla con detalles](instrucciones-comunes.png)
 
-A la izquierda la instrucción y a la derecha los operandos.
-
-![hola](instrucciones-comunes.png)
-
-Quizá se clasifiquen en acciones similares (?
+Quizá se clasifiquen en grupos de acciones similares (?
 
 ---
 
 *1t002, 1t003*
 
-## Binario y hexadecimal
+##### Binario y hexadecimal
 
-El sistema binario representa la forma en que las computadoras almacenan información (bi-estables). Y el hexadecimal proporciona una forma compacta y legible de representar estos números. Cada dígito hexadecimal representa cuatro dígitos binarios (nibble).
+El sistema binario representa la forma en que las computadoras almacenan información (bi-estables). Y el hexadecimal proporciona una forma compacta y legible de representar estos números. 
 
-### Conversiones
+*Idea: hacer calculadora didáctica en un notebook jupyter.*
 
-De binario a decimal - De decimal a binario
+###### Correspondencia
 
-De hexadecimal a decimal - De decimal a hexadecimal
+Cada dígito hexadecimal representa cuatro dígitos binarios (nibble).
 
-De binario a hexadecimal - De hexadecimal a binario
-
-![hola](correspondencia-directa.png)
+{{< rawhtml >}}
+<table class="table table-borderless table-responsive w-auto">
+  <tbody>
+    <tr>
+      <td>0</td>
+      <td>0000</td>
+      <td>8</td>
+      <td>1000</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>0001</td>
+      <td>9</td>
+      <td>1001</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>0010</td>
+      <td>A</td>
+      <td>1010</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>0011</td>
+      <td>B</td>
+      <td>1011</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>0100</td>
+      <td>C</td>
+      <td>1100</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>0101</td>
+      <td>D</td>
+      <td>1101</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>0110</td>
+      <td>E</td>
+      <td>1110</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>0111</td>
+      <td>F</td>
+      <td>1111</td>
+    </tr>
+  </tbody>
+</table>
+{{< /rawhtml >}}
 
 ---
 
 *1t004, 1t005, 1t006*
 
-## Memoria de video
+##### Memoria de video
 
 Parte de la memoria destinada a guardar la información de los píxeles en pantalla. Las imágenes están estructuradas en grupos de píxeles que el CRTC va leyendo de la memoria y enviando al monitor.
 
@@ -85,27 +151,30 @@ Por defecto arranca en C000 y ocupa 16000 bytes
 
 50hz refresco, produce parpadeo (flickering)
 
-## Formato de pixeles
+##### Formato de pixeles
 
-Es el cómo organizamos y entendemoms la información guardada en la memoria de video.
+Organización y entendimiento de la información guardada en memoria de video.
 
-En amstrad hay varios (2 modos).
+En amstrad hay 2 modos.
 
-### Modo 1
+###### Modo 1
+
+Menos colores, más eficiencia.
 
 ![Colores del formato de pideles modo 1](formato_pixeles_modo_1_color.png)
 
-Hay colores que siempre modifican el mismo lado de cada par de nibbles.
+Regla de los lados.
 
 ![Formato de pideles modo 1](formato_pixeles_modo_1.png)
 
-## Distribución de memoria de video
+##### Distribución de memoria de video
 
 Antiguamente, las computadoras trataban de emular terminales, y para ello usaban ¨caracteres¨, que son dibujos pequeños que sirven para expresar letras seguidas unas de otras.
 
-![hola](distribucion-video.png)
 
 Cada caracter tiene ocho pixeles por lado.
+
+La pantalla tiene 40 caracteres de ancho, y 25 de alto.
 
 ···
 
@@ -115,13 +184,11 @@ Al llenar la memoria:
 
 ![relleno](relleno.png)
 
-···
-
-Mapa de memoria de video
+###### Mapa de memoria de video
 
 {{< rawhtml >}}
 
-<table class="table"><thead>
+<table class="table table-borderless table-striped-columns w-auto"><thead>
     <tr>
         <th></th>
         <th>0</th>
@@ -436,6 +503,12 @@ Mapa de memoria de video
 {{< /rawhtml >}}
 
 - Cada fila de pixeles ocupa 2k = 2048 dec = 800 hex
+
+---
+
+#### Práctica
+
+lasdfa
 
 ---
 

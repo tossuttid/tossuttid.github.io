@@ -1,10 +1,6 @@
 {{ define "main" }}
-    <div class="container">
-        <h1 class="h2">{{ .Title }}</h1>
+    <div class="container-fluid">
+        <h1 class="py-3">{{ .Title }}</h1>
         {{ .Content }}
-        {{ range .Pages }}
-            <h2 class="h6"><a href="{{ .RelPermalink }}">{{ .Date }}</a></h2>
-            {{ .Summary }}
-        {{ end }}
     </div>
 {{ end }}
