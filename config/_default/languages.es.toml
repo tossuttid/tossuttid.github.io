@@ -14,6 +14,7 @@ logo = "img/logo.png"
 [params.author]
 name = "tossuttid"
 image = "img/author.jpg"
+headline = "(●'◡'●)"
 bio = "Sujeto mediocre, con un profundo interés por la arquitectura de computadoras y la programación a bajo nivel."
 links = [
   { github = "https://github.com/tossuttid" },
