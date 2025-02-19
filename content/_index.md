@@ -1,5 +1,13 @@
-**Bienvenido al Virgus!** 
+***
 
-Vas a encontrar apuntes relacionados a mis estudios.  Están diseñados para la comprensión personal, pero espero que sean útiles para otros.
+**virgus**
 
-*Cuando colaboro con otros autores, sus nombres están indicados.*
+Del lat. *virgus*, posible derivado de *virgo*, virgen, y *charta*, papel.
+
+**1.** m. Sociol. Actitud o práctica, generalmente temporal, que consiste en evitar de forma deliberada la interacción social y/o romántica con personas del género opuesto.
+
+**2.** m. desus. Objeto, supuestamente dotado de propiedades mágicas, utilizado en ciertas tradiciones esotéricas para registrar y conservar pensamientos, ideas o similares.
+
+***
+
+La conjunción *"apuntovich virgus"* captura la esencia de **"ganas de hinchar las pelotas compartiendo apuntes"**, y también se define como coloquial en argentina, reflejando su origen antisocial.
