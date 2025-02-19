@@ -21,7 +21,7 @@ showScrollToTop = true
 
 [homepage]
 layout = "background"
-homepageImage = "featured.jpg"
+homepageImage = "bg.jpg"
 showRecent = "Enable"
 showMoreLink = "Enable"
 
