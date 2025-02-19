@@ -1,0 +1,22 @@
+disabled = false
+languageCode = "es"
+LanguageName = "Español"
+weight = 1
+title = "Virgus Apuntovich"
+
+[params]
+displayName = "ES"
+isoCode = "es"
+rtl = false
+dateFormat = "2 January 2006"
+logo = "img/logo.png"
+
+[params.author]
+name = "tossuttid"
+image = "img/author.jpg"
+bio = "Sujeto mediocre, con un profundo interés por la arquitectura de computadoras y la programación a bajo nivel."
+links = [
+  { github = "https://github.com/tossuttid" },
+  { youtube = "https://youtube.com/tossuttid" },
+]
+
