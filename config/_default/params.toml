@@ -20,8 +20,10 @@ showAppearanceSwitcher = true
 showScrollToTop = true
 
 [homepage]
-layout = "page"
+layout = "background"
 homepageImage = "featured.jpg"
+showRecent = "Enable"
+showMoreLink = "Enable"
 
 [article]
 showDate = true
@@ -42,7 +44,7 @@ showHeadingAnchors = true
 showPagination = false
 invertPagination = false
 showReadingTime = true
-showTableOfContents = true
+showTableOfContents = false
 showTaxonomies = false
 showAuthorsBadges = false
 showWordCount = true
