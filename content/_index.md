@@ -1,1 +1,1 @@
-Del lat. *virgus*, posible derivado de *virgo*, virgen: **1.** m. Sociol. Actitud o práctica, generalmente temporal, que consiste en evitar de forma deliberada la interacción social y/o romántica con personas del género opuesto.
+Del lat. *virgus*, posible derivado de *virgo*, virgen; **1.** m. Sociol. Actitud o práctica, generalmente temporal, que consiste en evitar de forma deliberada la interacción social y/o romántica con personas del género opuesto.

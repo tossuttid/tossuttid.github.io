@@ -52,6 +52,32 @@
 #  pageRef = "tags"
 #  weight = 30
 
+[[main]]
+  name = "Blog"
+  pageRef = "posts"
+  weight = 10
+
+[[main]]
+  name = "Series"
+  pageRef = "tags"
+  weight = 20
+
+[[main]]
+  name = "Acerca de"
+  pageRef = "categories"
+  weight = 30
+
+[[subnavigation]]
+  name = "Youtube"
+  pre = "youtube"
+  url = "https://youtube.com/tossuttid"
+  weight = 10
+
+[[subnavigation]]
+  name = "Github"
+  pre = "github"
+  url = "https://github.com/tossuttid"
+  weight = 20
 
 # -- Footer Menu --
 # The footer menu is displayed at the bottom of the page, just before
@@ -67,3 +93,13 @@
 #   name = "Categories"
 #   pageRef = "categories"
 #   weight = 20
+
+[[footer]]
+  name = "Etiquetas"
+  pageRef = "tags"
+  weight = 10
+
+[[footer]]
+  name = "Categorías"
+  pageRef = "categories"
+  weight = 20

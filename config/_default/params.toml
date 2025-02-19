@@ -6,8 +6,8 @@ enableCodeCopy = false
 replyByEmail = false
 disableImageOptimization = false
 disableTextInHeader = false
-defaultFeaturedImage = "featured.jpg"
-defaultBackgroundImage = "featured.jpg"
+defaultFeaturedImage = "default.jpg"
+defaultBackgroundImage = "default.jpg"
 
 [header]
 layout = "fixed"
@@ -21,7 +21,7 @@ showScrollToTop = true
 
 [homepage]
 layout = "background"
-homepageImage = "bg.jpg"
+homepageImage = "default.jpg"
 showRecent = "Enable"
 showMoreLink = "Enable"
 
