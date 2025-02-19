@@ -1,8 +1,11 @@
-El Virgus es un banco de apuntes creado a partir de mis estudios y otros temas. Aunque están diseñados para la propia comprensión, se dispusieron al público por la creencia en que podrían resultar valiosos para alguien más. Siempre que se haya colaborado con otros autores en un artículo, verás sus nombres indicados.
+**Bienvenido al Virgus!** 
 
-¡Explorá y espero que encontrés algo útil!
+Vas a encontrar apuntes relacionados a mis estudios.  Están diseñados para la comprensión personal, pero espero que sean útiles para otros.
 
-{{< list title="Universidad" cardView=true limit=6 where="Type" value="posts" >}}
+*Cuando colaboro con otros autores, sus nombres están indicados.*
+
+
+{{< list title="Universidad" cardView=true limit=6 where="Type" value="uni" >}}
 
 {{< list title="Software" cardView=true limit=6 where="Type" value="software" >}}
 
