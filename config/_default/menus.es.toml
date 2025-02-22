@@ -58,26 +58,15 @@
   weight = 10
 
 [[main]]
-  name = "Series"
-  pageRef = "tags"
+  name = "Categorías"
+  pageRef = "categorias"
   weight = 20
 
 [[main]]
-  name = "Acerca de"
-  pageRef = "categories"
-  weight = 30
-
-[[subnavigation]]
-  name = "Youtube"
-  pre = "youtube"
-  url = "https://youtube.com/tossuttid"
-  weight = 10
-
-[[subnavigation]]
-  name = "Github"
+  identifier = "github"
   pre = "github"
   url = "https://github.com/tossuttid"
-  weight = 20
+  weight = 100
 
 # -- Footer Menu --
 # The footer menu is displayed at the bottom of the page, just before

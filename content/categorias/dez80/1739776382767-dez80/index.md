@@ -4,7 +4,7 @@ date: 2025-02-17
 draft: false
 description: "Mis anotaciones de lo aprendido en el curso 'Dominando Ensamblador del Z80' del profesor Francisco Gallego (retroman)."
 tags: ["example", "tag"]
-series: ["DEZ80"]
+series: ["dez80"]
 series_order: 1
 ---
 

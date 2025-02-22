@@ -4,7 +4,7 @@ date: 2025-02-17
 draft: false
 description: "a description"
 tags: ["example", "tag"]
-series: ["DEZ80"]
+series: ["dez80"]
 series_order: 3
 ---
 

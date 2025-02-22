@@ -3,61 +3,31 @@ title: "DEZ80 Nivel1 Práctica"
 date: 2025-02-17
 draft: false
 description: "a description"
-tags: ["example", "tag"]
-series: ["DEZ80"]
+series: ["dez80"]
 series_order: 2
 ---
 
-## Instroducción e Instalación
+## 001, 002
 
-*001, 002*
+**EJEMPLO:** Introducción al curso, Instalación de WinApe.
 
-## Pintar el primer pixel de color rojo
+## 003
 
-*003 ejemplo*
+**EJEMPLO:** Pintar el primer pixel de color rojo.
 
-![](/img/dez80/1-nivel/Pasted%20image%2020250127194352.png)
+![003](003.jpg)
 
-```
-4000 3E 88 32 00 C0 18 FE 00 00 00 00 00 00 00 00 00
+## 004, 005
 
-C000 88 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
-```
+**PRÁCTICA:** Jugando con el código, Ejecutando paso a paso
 
-## Jugando con el código, ejecutando paso a paso
+## 006
 
-*004, 005; práctica*
-
-- Jugando con el código
-- Ejecutando paso a paso
-
-## Pintar primer pixel de varios colores
-
-*006; reto*
+**RETO:** Pintar primer pixel de varios colores.
 
 Rojo:
 
-![](/img/dez80/1-nivel/Pasted%20image%2020250127194352.png)
-
-![](/img/dez80/1-nivel/Pasted%20image%2020250127224323.png)
-
-![](/img/dez80/1-nivel/Pasted%20image%2020250127195717.png)
-
-![](/img/dez80/1-nivel/Captura%20de%20pantalla%202025-01-27%20215720.png)
-
-![](/img/dez80/1-nivel/Pasted%20image%2020250127195015.png)
-
 Cyan:
-
-![](/img/dez80/1-nivel/Pasted%20image%2020250127224950.png)
-
-![](/img/dez80/1-nivel/Pasted%20image%2020250127225351.png)
-
-![](/img/dez80/1-nivel/Pasted%20image%2020250127225621.png)
-
-![](/img/dez80/1-nivel/Pasted%20image%2020250127225712.png)
-
-![](/img/dez80/1-nivel/Pasted%20image%2020250127225759.png)
 
 Etc...
 
